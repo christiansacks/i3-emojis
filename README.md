@@ -1,2 +1,2 @@
 # i3-emojies
-emojies for your i3
+emojis for your i3
