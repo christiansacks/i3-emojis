@@ -5,7 +5,7 @@
 # Must have xclip installed to even show menu.
 xclip -h >/dev/null || exit
 
-emojifile="/home/christian/.config/i3/scripts/emojis.txt"
+emojifile="emojis.txt"
 
 chosen=$(grep -v "#" $emojifile | dmenu -i -l 20 -fn 'Noto Color Emoji Mono-18')
 
