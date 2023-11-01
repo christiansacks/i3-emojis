@@ -12,9 +12,9 @@ chosen=$(grep -v "#" $emojifile | wofi --dmenu -i -L 20)
 [ "$chosen" != "" ] || exit
 
 c=$(echo "$chosen" | sed "s/ .*//")
-echo "$c" | tr -d '\n' | wl-copy
+echo "$c" | wl-copy -n
 notify-send "'$c' copied to clipboard." &
 
 s=$(echo "$chosen" | sed "s/.*; //" | awk '{print $1}')
-echo "$s" | tr -d '\n' | wl-copy -p
+echo "$s" | wl-copy -n -p
 notify-send "'$s' copied to primary." &
