@@ -2,7 +2,7 @@
 # Give wofi list of all unicode characters to copy.
 # Shows the selected character in dunst if running.
 
-# Must have xclip installed to even show menu.
+# Must have wl-copy installed to even show menu.
 wl-copy -h >/dev/null 2>&1 || exit
 
 emojifile="emojis.txt"
